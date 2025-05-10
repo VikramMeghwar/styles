@@ -315,17 +315,18 @@
     </choose>
   </macro>
   <!-- Citation -->
-  <citation>
-    <sort>
-      <key variable="citation-number"/>
-    </sort>
-    <layout delimiter=", ">
-      <group prefix="[" suffix="]" delimiter=", ">
+ <citation>
+  <sort>
+    <key variable="citation-number"/>
+  </sort>
+  <layout delimiter=", ">
+    <group prefix="[" suffix="]">
+      <group delimiter="-">
         <text variable="citation-number"/>
-        <text macro="citation-locator"/>
       </group>
-    </layout>
-  </citation>
+    </group>
+  </layout>
+</citation>
   <!-- Bibliography -->
   <bibliography entry-spacing="0" second-field-align="flush">
     <layout>
